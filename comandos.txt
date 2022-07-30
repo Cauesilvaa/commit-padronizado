@@ -1,0 +1,17 @@
+- npm install --save-dev @commitlint/config-conventional @commitlint/cli
+
+- configurar p commitlint.config.js
+
+- npm install husky --save-dev ou npm install@latest husky --save-dev
+
+- npx husky install
+
+- no terminal:
+cat <<EEE > .husky/commit-msg
+#!/bin/sh
+. "\$(dirname "\$0")/_/husky.sh"
+
+npx --no -- commitlint --edit "\${1}"
+EEE
+
+- no terminal: chmod a+x .husky/commit-msg

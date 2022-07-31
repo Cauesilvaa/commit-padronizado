@@ -15,3 +15,14 @@ npx --no -- commitlint --edit "\${1}"
 EEE
 
 - no terminal: chmod a+x .husky/commit-msg
+
+- no package.json em "scripts" adiciona:
+"prepare": "husky install"
+
+---------------------------------------------------------------------------------
+INSTALANDO O COMMITIZEN
+
+- npm install commitizen -D
+
+- no package.json em "scripts" adiciona:
+"commit": "git-cz"
